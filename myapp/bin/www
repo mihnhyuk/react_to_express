@@ -3,8 +3,12 @@
 /**
  * Module dependencies.
  */
+const cors = require("cors");
 
 var app = require('../app');
+
+app.use(cors());
+
 var debug = require('debug')('myapp:server');
 var http = require('http');
 
